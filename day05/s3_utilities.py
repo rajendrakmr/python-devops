@@ -1,6 +1,5 @@
 import boto3
-import pdb
-
+ 
 client = boto3.client('s3') 
 def show_bucket(client):
     s3_client = client.list_buckets() 
@@ -31,5 +30,5 @@ def create_bucket(client,bucket_name):
     ) 
     print(response)
 
-# create_bucket(client,"rk03126540")
+create_bucket(client,"rk03126540")
 show_bucket(client)
