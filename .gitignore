@@ -3,3 +3,4 @@ env
 genenv
 .env
 *.pyc
+genv
